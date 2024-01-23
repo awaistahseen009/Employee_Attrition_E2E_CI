@@ -1,0 +1,23 @@
+name: CML
+on: [push]
+jobs:
+  train-and-report:
+    runs-on: ubuntu-latest
+    container: docker://ghcr.io/iterative/cml:0-dvc2-base1
+    steps:
+      - uses: actions/checkout@v3
+      - name: Train model
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip install -r requirements.txt
+          python train.py  # generate plot.png
+
+          # Create CML report
+          echo "## Model metrics" > report.md
+          cat metrics.txt >> report.md
+          echo "## Result Visualization" >> report.md
+          cml-publish metrics_images/feature_importance.png --md >>report.md
+          cml-publish metrics_images/precision_recall_curve.png --md >>report.md
+          cml-publish metrics_images/roc_curve.png --md >>report.md
+          cml comment create report.md
