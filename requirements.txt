@@ -1,3 +1,4 @@
+imblearn
 mlflow==2.9.2
 cloudpickle==2.0.0
 configparser==6.0.0
@@ -13,4 +14,3 @@ numpy==1.23.5
 matplotlib
 pandas==1.5.3
 streamlit
-imblearn
