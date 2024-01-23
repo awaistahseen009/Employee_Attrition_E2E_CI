@@ -1,0 +1,20 @@
+artifact_path: Logging_model_v2_resampling
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.9.2
+model_size_bytes: 4990622
+model_uuid: e86fdb8baad247d3956cbbd898f39f94
+run_id: b55e27dc31f048aabb2085c4e861fb2b
+utc_time_created: '2024-01-23 15:08:24.600480'

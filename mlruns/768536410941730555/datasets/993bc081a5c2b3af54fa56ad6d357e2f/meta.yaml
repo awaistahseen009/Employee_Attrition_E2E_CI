@@ -1,0 +1,11 @@
+digest: 43ab35f9
+name: dataset
+profile: '{"num_rows": 18274, "num_elements": 146192}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "satisfaction_level"}, {"type":
+  "double", "name": "last_evaluation"}, {"type": "long", "name": "number_project"},
+  {"type": "long", "name": "average_montly_hours"}, {"type": "long", "name": "time_spend_company"},
+  {"type": "long", "name": "Work_accident"}, {"type": "long", "name": "promotion_last_5years"},
+  {"type": "long", "name": "salary"}]}'
+source: '{"tags": {"mlflow.user": "Awais", "mlflow.source.name": "train.py", "mlflow.source.type":
+  "LOCAL"}}'
+source_type: code

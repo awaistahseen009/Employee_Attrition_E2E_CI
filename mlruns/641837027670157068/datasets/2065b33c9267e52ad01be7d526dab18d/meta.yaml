@@ -1,0 +1,9 @@
+digest: 4abe3e01
+name: dataset
+profile: '{"features_shape": [2893, 8], "features_size": 23144, "features_nbytes":
+  185152}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 8]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "Awais", "mlflow.source.name": "train.py", "mlflow.source.type":
+  "LOCAL"}}'
+source_type: code

@@ -7,6 +7,8 @@ from sklearn.datasets import make_classification
 import mlflow
 import os
 import shutil
+from sklearn.metrics import accuracy_score, precision_score , f1_score, recall_score
+
 
 def evaluate_and_save_metrics(model, X_test, y_test, save_folder):
     # Calculate ROC AUC score
@@ -70,3 +72,15 @@ def plot_and_save_feature_importance_bar_graph(feature_names, feature_importance
     save_path = os.path.join(save_folder, 'feature_importance.png')
     plt.savefig(save_path)
     plt.close()
+
+def save_metrics_to_txt(y_pred, y_test, file_path):
+    # Calculate Precision, Recall, and F1 Score
+    precision = precision_score(y_test, y_pred)
+    recall = recall_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred)
+
+    # Save metrics to a text file
+    with open(file_path, 'w') as file:
+        file.write(f'Precision: {precision}\n')
+        file.write(f'Recall: {recall}\n')
+        file.write(f'F1 Score: {f1}\n')

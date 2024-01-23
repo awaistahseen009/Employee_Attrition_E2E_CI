@@ -9,8 +9,7 @@ import numpy as np
 import mlflow
 import mlflow.sklearn
 import matplotlib.pyplot as plt
-from utils import evaluate_and_save_metrics
-from sklearn.metrics import accuracy_score, precision_score , f1_score, confusion_matrix
+from utils import evaluate_and_save_metrics,save_metrics_to_txt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from datetime import datetime
@@ -32,6 +31,7 @@ smote = SMOTE(random_state=42)
 X_resampled, y_resampled = smote.fit_resample(x_train, y_train)
 rfc_resampled=RandomForestClassifier(n_estimators=50, random_state=2)
 rfc_resampled.fit(X_resampled, y_resampled)
+ypred=rfc_resampled.predict(x_test)
 mlflow.sklearn.save_model(rfc_resampled,f"model_best_v2_resample_{current_datetime}")
 mlflow.sklearn.log_model(rfc_resampled, f'Logging_model_v2_resampling')
 mlflow.end_run()
@@ -44,6 +44,6 @@ f'runs:/{last_run}/Logging_model_v2_resampling',
     targets='left',
     model_type='classifier'
 )
+save_metrics_to_txt(ypred,y_test,'metrics.txt')
 destination_folder='metrics_images'
-print(x_test.columns)
 evaluate_and_save_metrics(rfc_resampled, x_test, y_test, destination_folder)

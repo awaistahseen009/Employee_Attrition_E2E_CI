@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Awais/Desktop/Machine_learning_ETEP/Employee_Attrition/mlruns/768536410941730555/a6c6f14c03924df4819253ab74740479/artifacts
+end_time: 1706022234618
+entry_point_name: ''
+experiment_id: '768536410941730555'
+lifecycle_stage: active
+run_id: a6c6f14c03924df4819253ab74740479
+run_name: grandiose-crab-39
+run_uuid: a6c6f14c03924df4819253ab74740479
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706022228726
+status: 3
+tags: []
+user_id: Awais

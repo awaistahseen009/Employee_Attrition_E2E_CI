@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Awais/Desktop/Machine_learning_ETEP/Employee_Attrition/mlruns/708834281099308110/3d3ca1c4df5d4f6d96fec09780fd0d04/artifacts
+end_time: 1706022348194
+entry_point_name: ''
+experiment_id: '708834281099308110'
+lifecycle_stage: active
+run_id: 3d3ca1c4df5d4f6d96fec09780fd0d04
+run_name: secretive-toad-344
+run_uuid: 3d3ca1c4df5d4f6d96fec09780fd0d04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706022314796
+status: 3
+tags: []
+user_id: Awais
