@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Awais/Desktop/Machine_learning_ETEP/Employee_Attrition/mlruns/967323451770768818/b7b94586fbfa4ae4a5930a9e5aa62bf9/artifacts
+end_time: 1705987035725
+entry_point_name: ''
+experiment_id: '967323451770768818'
+lifecycle_stage: active
+run_id: b7b94586fbfa4ae4a5930a9e5aa62bf9
+run_name: colorful-whale-313
+run_uuid: b7b94586fbfa4ae4a5930a9e5aa62bf9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705986895592
+status: 3
+tags: []
+user_id: Awais

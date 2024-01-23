@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Awais/Desktop/Machine_learning_ETEP/Employee_Attrition/mlruns/967323451770768818/7f418c8a5a1e4faebf1249972542c2bb/artifacts
+end_time: 1705988600546
+entry_point_name: ''
+experiment_id: '967323451770768818'
+lifecycle_stage: active
+run_id: 7f418c8a5a1e4faebf1249972542c2bb
+run_name: nervous-cow-725
+run_uuid: 7f418c8a5a1e4faebf1249972542c2bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705988594703
+status: 3
+tags: []
+user_id: Awais
